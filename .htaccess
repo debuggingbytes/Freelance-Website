@@ -1,0 +1,9 @@
+#Options +FollowSymLinks
+#RewriteEngine on
+#RewriteCond %{REQUEST_FILENAME} !-f        # don't apply to the existing html files
+#RewriteRule ^([^.]+)\.html$ /$1\.php [QSA,L]  # QSA means combine query string.
+
+#RewriteEngine On
+#RewriteCond &#37;{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule ^([^.]+)\.html$ /$1\.php [QSA,L]  # QSA means combine query string.

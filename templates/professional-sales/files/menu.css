@@ -1,0 +1,339 @@
+/*  NAVIGATION
+------------------------------------------------*/
+#menu-button{
+	display: none;
+}
+
+nav.primary {
+	padding:0;
+	margin: 0;
+	width:100%;
+	
+	border-bottom: 3px solid #4097C5;
+}
+
+nav.primary ul {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	bottom: 0;
+	font-size: 0;
+}
+
+#navbar--logo {
+	width: 100%;
+	background-color: #e5e9ec;
+	height: 150px;
+	transition: 0.3s;
+	
+	border-bottom: 3px solid #4097C5;
+}
+
+#navbar--logo img {
+	max-height: 200px;
+	margin: auto;
+	left: 10%;
+	transition: 0.3s;
+}
+
+
+#navbar--phone {
+	font-size: 26px;
+	font-weight: 600;
+	color: #dbc168 !important;
+}
+
+nav.primary ul li {
+	list-style-type:none;
+	display:inline-block;
+	*zoom:1;
+	*display:inline;
+	vertical-align: middle;
+	margin: 0;
+	margin-left: 0;
+	padding: 10px 12px;
+	
+	font-family: montserrat, sans-serif;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 400;
+	color: #fff;
+}
+
+nav.primary ul li.first{margin-left: 10%;}
+
+.nav-opener, .nav-closer, .mobile--icon, .mobile--icon__fa { display: none !important; }
+
+nav.primary ul li.onpage, nav.primary ul li:hover {background-color: #4097C5;}
+
+@supports (clip-path: polygon(15px 0, 100% 0, calc(100% - 15px) 100%, 0 100%) ) {
+	nav.primary ul li.onpage, nav.primary ul li:hover {
+		clip-path: polygon(15px 0, 100% 0, calc(100% - 15px) 100%, 0 100%);
+	}
+
+	nav.primary ul li#navbar--logo:hover, nav.primary ul li#navbar--logo {
+		clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+		margin-left: 0;
+	}
+	
+	nav.primary ul li {
+		margin-left: -16px;
+	}
+}
+
+/*==========================================
+		RESPONSIVE MENU STYLES
+==========================================*/
+
+
+
+header{
+	width:100%;
+	margin:0;
+	background-color: #303030;
+	display: block;
+	position: fixed;
+	z-index: 999999;
+	box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+}
+.header-links {
+	z-index: 9999;
+	text-align: left;
+	transition: 0.3s;
+	left: auto;
+	min-width: 25%;
+}
+
+.header-links p a {
+	line-height: 1.6em;
+	color: #444444;
+}
+
+.header-links p a:hover {
+	color: #4097C5;
+}
+
+.header-links p a i {
+	color: #4097C5;
+	width: 16px;
+	text-align: center;
+}
+
+.header-links .social {display: inline-block;}
+.header-links .social img {display: inline-block !important;}
+
+/*====================================== 
+	
+	Color information
+	
+	-
+		 
+========================================*/
+
+/*====================================== 
+		CSS reset/normalize 
+========================================*/
+
+/*===== Correct `block` display not defined in IE 8/9. =====*/
+article,aside,details,figcaption,figure,footer,header,hgroup,
+main,nav,section,summary {display: block;}
+pre {white-space: pre-wrap;}
+small {font-size: 80%;}
+svg:not(:root) {overflow: hidden;}
+
+/*====================================== 
+
+			BASE STYLES 
+
+========================================*/
+* {box-sizing: border-box;}
+
+html {-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;}
+.clear {clear: both;}
+img {border: 0;max-width:100%;} 
+
+body {
+    font-family: changa, sans-serif;
+	font-weight: 200;
+    margin: 0;
+	padding:0;
+	background-color: #eee;
+	color: #111;
+}
+
+hr {width: 90%; margin: 10px auto; background-color: #fff; height: 1px;}
+
+
+
+
+	
+/*====================================== 
+
+			TYPOGRAPHY
+
+=======================================*/
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: changab, sans-serif ;
+	font-weight: 400;
+	margin: 5px 0;
+	color: #4097C5;
+}
+
+h1.light, h2.light, h3.light, h4.light, h5.light, h6.light {
+	font-family: changal, sans-serif;
+	font-weight: 200;
+}
+
+h1.white, h2.white, h3.white, h4.white, h5.white, h6.white, p.white {
+	color: #fff;
+}
+
+h1.red, h2.red, h3.red, h4.red, h5.red, h6.red{
+	color: #4097C5;
+}
+
+h1.inline, h2.inline, h3.inline, h4.inline, h5.inline, h6.inline{
+	display: inline-block;
+}
+
+h1.extra-padding, h2.extra-padding, h3.extra-padding, h4.extra-padding, h5.extra-padding, h6.extra-padding{
+	padding: 15px 0;
+}
+
+h1 {font-size: 36px;}
+h2 {font-size: 30px;}
+h3 {font-size: 24px;}
+h4 {font-size: 20px;}
+h5 {font-size: 18px;}
+h6 {font-size: 16px;}
+
+p, li {
+	font-size: 14px;
+	line-height: 1.4em;
+	margin: 0;
+	font-family: changa, sans-serif;
+	padding: 5px 0%;
+}
+
+strong {font-family: changab, sans-serif;}
+
+@font-face {
+	font-family: "changa";
+	src: url(http://www.albertacraneservice.com/files/fonts/changa-regular.ttf);	
+}
+@font-face {
+	font-family: "changab";
+	src: url(http://www.albertacraneservice.com/files/fonts/changa-bold.ttf);	
+}
+@font-face {
+	font-family: "changal";
+	src: url(http://www.albertacraneservice.com/files/fonts/changa-light.ttf);	
+}
+
+/*====================================== 
+
+			LINK STYLES
+
+=======================================*/
+
+a {
+    text-decoration:none;
+	color: #4097C5;
+}
+
+a:hover  {
+	color: #111;
+    text-decoration:none;
+} 
+
+
+
+
+
+/*======================================
+
+		TOPBAR/HEADER STYLES 
+
+=======================================*/
+
+header{
+	width:100%;
+	margin:0;
+	background-color: #303030;
+	display: block;
+	position: fixed;
+	z-index: 999999;
+	box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+}
+
+.header-links {
+
+	text-align: left;
+	transition: 0.3s;
+	left: auto;
+	min-width: 25%;
+}
+
+.header-links p a {
+	line-height: 1.6em;
+	color: #444444;
+}
+
+.header-links p a:hover {
+	color: #4097C5;
+}
+
+.header-links p a i {
+	color: #4097C5;
+	width: 16px;
+	text-align: center;
+}
+
+.header-links .social {display: inline-block; padding-top: 23px;}
+.header-links .social img {display: inline-block !important;}
+
+
+
+
+/*======================================
+
+			CONTENT STYLES
+
+=======================================*/
+
+
+@keyframes fadein {
+    from {opacity:0;}
+    to {opacity:1;}}
+@-moz-keyframes fadein { /* Firefox */
+    from {opacity:0;}
+    to {opacity:1;}}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {opacity:0;}
+    to {opacity:1;}}
+@-o-keyframes fadein { /* Opera */
+    from {opacity:0;}
+	to {opacity: 1;}}
+
+#wrapper{
+	width:100%;
+/*	max-width: 1200px;	/*For sites that shouldn't be full-width*/
+	padding:0;
+	position: absolute;
+	top: 192px;
+	left: 0;
+	right: 0;
+	margin: auto; 
+	transition: 0.5s;
+	
+	animation: fadein 0.5s;
+    -moz-animation: fadein 0.5s; /* Firefox */
+    -webkit-animation: fadein 0.5s; /* Safari and Chrome */
+    -o-animation: fadein 0.5s; /* Opera */
+}
+
+.dark-bg {background: url(http://www.albertacraneservice.com/siteart/dark-bg.png) repeat; color: #fff;} 
+.blue-bg {background: #4097C5;}
+.line-bg {background: url(http://www.albertacraneservice.com/siteart/line-bg.png) repeat; color: #333333}
+.tile-bg {background: url(http://www.albertacraneservice.com/siteart/tile-bg.png) repeat;}

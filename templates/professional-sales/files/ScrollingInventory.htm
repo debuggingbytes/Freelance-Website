@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" "="">
+    <title>
+
+</title>
+    <script type="text/javascript" language="javascript" src="ScrollingInventory_data/jquery-latest.js"></script>
+      
+    <script type="text/javascript" src="ScrollingInventory_data/jMyCarousel.js"></script>
+    <style id="styleTag" type="text/css">            
+        #scroll img {
+	        height:90px;  /* minimizes loading issues */
+        }
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+    </style></head>
+<body>            
+        <div id="divScrollingInventory" style="width: 100%; height: 100%; visibility: visible; position: absolute;">
+        <img src="logo-simple.png" width="381" height="158" />
+	  <img src="logo-simple.png" width="381" height="158" />
+	  <img src="logo-simple.png" width="381" height="158" />
+	  <img src="logo-simple.png" width="381" height="158" />
+	  <img src="logo-simple.png" width="381" height="158" />
+	  <img src="logo-simple.png" width="381" height="158" />
+	  <img src="logo-simple.png" width="381" height="158" />
+	  <img src="logo-simple.png" width="381" height="158" />
+	  <img src="logo-simple.png" width="381" height="158" />
+	  <img src="logo-simple.png" width="381" height="158" />
+	  <img src="logo-simple.png" width="381" height="158" />
+	  <img src="logo-simple.png" width="381" height="158" />
+	  <img src="logo-simple.png" width="381" height="158" />
+	  <img src="logo-simple.png" width="381" height="158" />
+        </div>
+    <script language="JavaScript" type="text/javascript">	
+    
+
+		var sSliderSize = '2500px';
+		var bAutoScroll = 'True';
+		var bEltByElt = 'False';
+		var nSliderSpeed= parseInt('1250');
+		var bVertical = 'False';
+		var bCircular = 'True';
+		var sEvtStart;
+		var sEvtStop;
+		var oBtnNext;		 
+		
+		if(bAutoScroll.toUpperCase() == "TRUE") {		
+			bAutoScroll = true;
+			bEltByElt = false;
+			oBtnNext = $("#carousel_container")
+			sEvtStart = 'mouseout';
+			sEvtStop = 'mouseover';
+		} else {
+			bAutoScroll = false;
+			bEltByElt = true;
+			oBtnNext = null;
+			sEvtStart = 'mousedown';
+			sEvtStop = 'mouseup';
+		}
+		
+		if(bVertical.toUpperCase() == "TRUE") {
+			bVertical = true;
+		} else {
+			bVertical = false;
+		}
+
+		$(document).ready(function () {
+		    setTimeout(function () {
+		        $(function () {
+		            $(".JMyCarousel").jMyCarousel({
+		                visible: sSliderSize,
+		                auto: bAutoScroll,
+		                eltByElt: bEltByElt,
+		                circular: bCircular,
+		                btnNext: oBtnNext,
+		                evtStart: sEvtStart,
+		                evtStop: sEvtStop,
+		                vertical: bVertical,
+		                speed: nSliderSpeed
+		            });
+		            $("#divScrollingInventory").css("visibility", "visible");
+		        });
+		    }, 450);
+
+		})
+	  
+    </script>
+
+
+</body></html>

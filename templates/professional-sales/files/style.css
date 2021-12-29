@@ -1,0 +1,529 @@
+﻿/*====================================== 
+	
+	Color information
+	
+	-
+		 
+========================================*/
+
+/*====================================== 
+		CSS reset/normalize 
+========================================*/
+
+/*===== Correct `block` display not defined in IE 8/9. =====*/
+article,aside,details,figcaption,figure,footer,header,hgroup,
+main,nav,section,summary {display: block;}
+pre {white-space: pre-wrap;}
+small {font-size: 80%;}
+svg:not(:root) {overflow: hidden;}
+
+body::before {
+	display: block;
+	content: '';
+	height: 189px;
+
+}
+@media screen and (max-width: 768px) {
+	body::before {
+		display: block;
+		content: '';
+		height: 99px;
+	}
+}
+
+/*====================================== 
+
+			BASE STYLES 
+
+========================================*/
+* {box-sizing: border-box;}
+
+html {-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;}
+.clear {clear: both;}
+img {border: 0;max-width:100%;} 
+a,a:active, a:hover, a:visited {
+	text-decoration: none;
+}
+
+body {
+    font-family: changa, sans-serif;
+	font-weight: 200;
+    margin: 0;
+	padding:0;
+	background-color: #eee;
+	color: #111;
+}
+
+hr {width: 90%; margin: 10px auto; background-color: #fff; height: 1px;}
+
+
+
+
+	
+/*====================================== 
+
+			TYPOGRAPHY
+
+=======================================*/
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: changab, sans-serif ;
+	font-weight: 400;
+	margin: 5px 0;
+	color: #4097C5;
+}
+
+h1.light, h2.light, h3.light, h4.light, h5.light, h6.light {
+	font-family: changal, sans-serif;
+	font-weight: 200;
+}
+
+h1.white, h2.white, h3.white, h4.white, h5.white, h6.white, p.white {
+	color: #fff;
+}
+
+h1.red, h2.red, h3.red, h4.red, h5.red, h6.red{
+	color: #4097C5;
+}
+
+h1.inline, h2.inline, h3.inline, h4.inline, h5.inline, h6.inline{
+	display: inline-block;
+}
+
+h1.extra-padding, h2.extra-padding, h3.extra-padding, h4.extra-padding, h5.extra-padding, h6.extra-padding{
+	padding: 15px 0;
+}
+
+h1 {font-size: 36px;}
+h2 {font-size: 30px;}
+h3 {font-size: 24px;}
+h4 {font-size: 20px;}
+h5 {font-size: 18px;}
+h6 {font-size: 16px;}
+
+p, li {
+	font-size: 14px;
+	line-height: 1.4em;
+	margin: 0;
+	font-family: changa, sans-serif;
+	padding: 5px 0%;
+}
+
+strong {font-family: changab, sans-serif;}
+
+@font-face {
+	font-family: "changa";
+	src: url(http://www.albertacraneservice.com/files/fonts/changa-regular.ttf);	
+}
+@font-face {
+	font-family: "changab";
+	src: url(http://www.albertacraneservice.com/files/fonts/changa-bold.ttf);	
+}
+@font-face {
+	font-family: "changal";
+	src: url(http://www.albertacraneservice.com/files/fonts/changa-light.ttf);	
+}
+
+/*====================================== 
+
+			LINK STYLES
+
+=======================================*/
+
+a {
+    text-decoration:none;
+	color: #4097C5;
+}
+
+a:hover  {
+	color: #111;
+    text-decoration:none;
+} 
+
+
+
+
+
+/*======================================
+
+		TOPBAR/HEADER STYLES 
+
+=======================================*/
+
+header{
+	width:100%;
+	margin:0;
+	background-color: #303030;
+	display: block;
+	position: fixed;
+	z-index: 999999;
+	box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+}
+
+.header-links {
+	position: absolute;
+	top: 35px;
+	right: 8%;
+	z-index: 9999;
+	text-align: left;
+	transition: 0.3s;
+	left: auto;
+	min-width: 25%;
+}
+
+.header-links p a {
+	line-height: 1.6em;
+	color: #444444;
+	text-decoration: none;
+}
+
+.header-links p a:hover {
+	color: #4097C5;
+}
+
+.header-links p a i {
+	color: #4097C5;
+	width: 16px;
+	text-align: center;
+}
+
+.header-links .social {display: inline-block; padding-top: 23px;}
+.header-links .social img {display: inline-block !important;}
+
+
+
+
+
+
+/*======================================
+
+		See menu.css for Nav Styles 
+
+=======================================*/
+
+
+
+
+
+/*======================================
+
+			CONTENT STYLES
+
+=======================================*/
+
+
+@keyframes fadein {
+    from {opacity:0;}
+    to {opacity:1;}}
+@-moz-keyframes fadein { /* Firefox */
+    from {opacity:0;}
+    to {opacity:1;}}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {opacity:0;}
+    to {opacity:1;}}
+@-o-keyframes fadein { /* Opera */
+    from {opacity:0;}
+	to {opacity: 1;}}
+
+#wrapper{
+	width:100%;
+/*	max-width: 1200px;	/*For sites that shouldn't be full-width*/
+	padding:0;
+	position: absolute;
+	top: 192px;
+	left: 0;
+	right: 0;
+	margin: auto; 
+	transition: 0.5s;
+	
+	animation: fadein 0.5s;
+    -moz-animation: fadein 0.5s; /* Firefox */
+    -webkit-animation: fadein 0.5s; /* Safari and Chrome */
+    -o-animation: fadein 0.5s; /* Opera */
+}
+
+.dark-bg {background: url(http://www.albertacraneservice.com/siteart/dark-bg.png) repeat; color: #fff;} 
+.blue-bg {background: #4097C5;}
+.line-bg {background: url(http://www.albertacraneservice.com/siteart/line-bg.png) repeat; color: #333333}
+.tile-bg {background: url(http://www.albertacraneservice.com/siteart/tile-bg.png) repeat;}
+
+
+
+
+
+/*======================================
+
+			HERO SLIDER STYLES
+
+======================================*/
+.hero {
+	/*sizing */
+	width: 100vw;
+    height: 80vh;
+	/* Flex Box */
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	
+	padding: 50px 0;
+	text-align: center;
+	background-image: url('../siteart/hero-3.jpg');
+	background-size: cover;
+    background-position: center center; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.hero img {display: inline-block !important;}
+
+.faded-blue {
+	background: rgba(0,255,255,0.3);
+}
+
+
+
+
+
+
+/*======================================
+
+		CATEGORY TILE STYLES
+
+======================================*/
+
+.category-tile {
+	border-radius: 5px;
+	border: 2px solid #4097C5;
+	height: 150px;
+	overflow: hidden;
+	background-size: cover;
+	margin: 10px 0;
+	max-width: 40%;
+	position: relative;
+}
+
+.category-tile#cat__allterrain {background: url('http://www.albertacraneservice.com/siteart/tile-bgs/all-terrain.jpg') center center;}
+.category-tile#cat__boom {background: url('http://www.albertacraneservice.com/siteart/tile-bgs/boom.jpg') center center;}
+.category-tile#cat__carrydeck {background: url('http://www.albertacraneservice.com/siteart/tile-bgs/carrydeck.jpg') center center;}
+.category-tile#cat__crawler {background: url('http://www.albertacraneservice.com/siteart/tile-bgs/crawler.jpg') center center;}
+.category-tile#cat__conventional {background: url('http://www.albertacraneservice.com/siteart/tile-bgs/conventional.jpg') center center;}
+.category-tile#cat__roughterrain {background: url('http://www.albertacraneservice.com/siteart/tile-bgs/roughterrain.jpg') center center;}
+.category-tile#cat__tower {background: url('http://www.albertacraneservice.com/siteart/tile-bgs/tower.jpg') center center;}
+.category-tile#cat__other {background: url('http://www.albertacraneservice.com/siteart/tile-bgs/other.jpg') center center;}
+.category-tile#cat__parts {background: url('http://www.albertacraneservice.com/siteart/tile-bgs/parts.png') center center;}
+.category-tile#cat__requests {background: url('http://www.albertacraneservice.com/siteart/tile-bgs/crane.png') center center;}
+.category-tile#cat__tractor {background: url('http://www.albertacraneservice.com/siteart/tile-bgs/tractor.png') center center;}
+.category-tile#cat__trailer {background: url('http://www.albertacraneservice.com/siteart/tile-bgs/trailer.png') center center;}
+
+.category-tile__link {
+	position: absolute;
+	bottom: -35px;
+	background-color: rgba(0,0,0,0.7);
+	text-align: center;
+	padding: 10px 0;
+	width: 100%;
+	transition: 0.4s;
+}
+
+.category-tile__link a {
+	color: #fff;
+	font-size: 12px;
+	}
+
+.category-tile__link a span {
+	color: #4097c5;
+	font-size: 18px;
+	font-style: italic;
+}
+
+.category-tile:hover > .category-tile__link {bottom: 0;}
+
+
+
+
+
+
+/*======================================
+
+		ABOUT ROW STYLES
+
+======================================*/
+.about-row {padding: 20px 0;}
+
+.about-row .col-sm-5 {max-height: 200px;
+-webkit-transition: all 0.9s;
+	-moz-transition: all 0.9s;
+	-ms-transition: all 0.9s;
+	-o-transition: all 0.9s;
+	transition: all 0.9s;
+
+}
+.about-row .col-sm-5 img {
+	width: 90%; 
+	max-width: 300px;
+	position: absolute; 
+	top:0;bottom:0;left:0;right:0;
+	margin: auto;
+}
+.about-row-small {
+	padding: 5px 0;
+	max-height: 80px;
+	overflow: hidden;
+}
+.about-row-small:hover {
+	padding: 20px 0;
+	max-height: 250px;
+	overflow: hidden;
+	-webkit-transition: all 0.9s;
+	-moz-transition: all 0.9s;
+	-ms-transition: all 0.9s;
+	-o-transition: all 0.9s;
+	transition: all 0.9s;
+
+}
+
+.about-row-small .col-sm-5 {height: 100px;}
+.about-row-small .col-sm-5 img {
+	width: 90%; 
+	max-width: 300px;
+	position: absolute; 
+	top:0;bottom:0;left:0;right:0;
+	margin: auto;
+}
+
+
+
+
+
+/*======================================
+
+		CONTACT FORMS STYLES
+
+======================================*/
+.contact-form-row .col-sm-6 {padding: 10px 5%; margin: 15px 0;}
+
+.contact-form input, .contact-form textarea {
+	width: 100%;
+	margin: 4px 0;
+	padding: 6px;
+}
+
+.contact-form textarea {height: 125px;}
+
+.contact-form button {margin: 0 auto; display: block; cursor: pointer;}
+
+
+
+
+#cat__requests {cursor: pointer;}
+
+#crane-request-popup {
+	display: none;
+	width: 500px;
+	max-width: 100%;
+	position: fixed;
+	z-index: 99999999999;
+	top:0;left:0;right:0;bottom:0;
+	margin: auto;
+	padding: 10px 3%;
+	max-height: 600px;
+	box-shadow: 1px 1px 3px 5px rgba(0,0,0,0.1);
+	background: #aaa;
+}
+
+#request-closer {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	color: #aaa;
+	cursor: pointer;
+}
+
+#crane-request-popup .CaptchaPanel {
+	margin: 0;
+	padding: 0;
+}
+
+#crane-request-popup .CaptchaImagePanel, #crane-request-popup .CaptchaMessagePanel {
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+	width: 45%;
+}
+
+#crane-request-popup .CaptchaMessagePanel {
+	font-size: 12px;
+	font-weight: normal;
+}
+
+#crane-request-popup .CaptchaAnswerPanel {padding: 10px 0 0 0;}
+
+#crane-request-popup #CaptchaAnswer {padding: 0; margin: 0;}
+
+#crane-request-popup .contact-form textarea {height: auto;}
+
+
+
+
+
+/*======================================
+
+		SCROLLING INVENTORY STYLES
+
+======================================*/
+
+.scrolling-wrap {
+    width:100%;
+	max-height: 150px;
+	overflow: hidden;
+	background: #2f4357;
+}
+ 
+.scrolling{
+    width:100%;
+}
+
+
+
+/*======================================
+	DYNAMIC IFRAME FOR INVENTORY
+
+.embed-container { 
+	position: relative; 
+	padding-bottom: 56.25%; 
+	height: 0; 
+	overflow: hidden; 
+	max-width: 100%; 
+} 
+.embed-container iframe, .embed-container object, .embed-container embed { 
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	width: 100%; 
+	height: 100%; 
+}
+=======================================*/
+/*======================================
+
+			FOOTER STYLES
+
+======================================*/
+
+.footer {
+	margin: 0 auto;
+	width: 100%;
+	text-align: center;
+	font-size: 14px;
+	font-weight: 500;
+	padding: 30px 0;
+	color: #ddd;
+}
+
+.footer a {color: #ddd;}
+.footer img {display: inline-block !important;}
+
+
+.auto-size{
+	height: auto;
+	overflow:auto;
+}

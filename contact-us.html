@@ -1,0 +1,190 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Debugging Bytes | SEO Friendly Web Design in Edmonton</title>
+		<link rel="stylesheet" href="files/font-awesome.css" type="text/css">
+		<script src="https://kit.fontawesome.com/c5608c8cee.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" type="text/css" href="files/style.css"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">		
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>		
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+		<link rel="stylesheet" href="files/bootstrap.css" type="text/css">
+		<link rel="stylesheet" href="files/bootstrap-grid.css" type="text/css">
+		<link rel="stylesheet" href="files/bootstrap-reboot.css" type="text/css">
+		
+		<script>
+		  $(function () {							
+			$('form').on('submit', function (e) {							
+			  e.preventDefault();							
+			  $.ajax({
+				type: 'post',
+				url: '/scripts/process.php',
+				data: $('form').serialize(),
+				success: function () {
+					 $('#contact_form').html("<div id='results' width='300px' align='center' class='shadow'></div>");
+					 $('#results').html("<h1>Contact Form Submitted!</h1>")
+					 .append("<p>We will be in touch soon.</p>")
+					 .hide()
+					 .fadeIn(1500, function() {
+						$('#results').append("<i class='fas fa-check-square fa-3x'></i> Successfully Sent");
+				 });
+				}
+			  });
+								
+			});
+								
+		  });
+		</script>		
+		
+	</head>
+	<body id="home">
+		<header>
+			<img id="logo" src="files/images/db-full-logo.png" width="280px" alt="Debugging Bytes, Let us code for you!" />
+			<nav>
+				<a href='./#home'>HOME</a>
+				<a href='./#services'>SERVICES</a>
+				<a href='./#aboutus'>ABOUT US</a>
+				<!--<a href='#'>CLIENTS</a>	-->			
+				<a href='./contact-us.html'>CONTACT US</a>
+			</nav>
+		</header>
+		<div id="wrapper">
+			<div class="container-fluid">
+				<div class="contactus">
+					<div class='row'>
+						<div class='shadow blue'>
+							<h1>Contact Us today</h1>
+							<p>Please use the contact form below to get in touch with us! Please allow 12-24 business hours for a reply</p>
+						</div>
+					</div>
+				</div>
+				<div class="bar-top-sm">&nbsp;</div>
+				<div class='row'>
+					<div class='contact'>
+						<div class='row'>
+							<div class='col align-self-center social' align='center'>
+								<a href='https://www.google.com/maps/place/Chokecherry+Pl+SW,+Edmonton,+AB/@53.4097986,-113.4567401,18z/data=!4m5!3m4!1s0x53a01c162299c337:0x67a15c70c15424b3!8m2!3d53.4091519!4d-113.4547448'><i class="fas fa-location-arrow fa-3x"></i></a>&nbsp;
+								<a href='tel:17802893856'><i class="fas fa-phone-alt fa-3x"></i></a>&nbsp;
+								<a href='sms:17802893856'><i class="fas fa-sms fa-3x"></i></a>&nbsp;
+								<a href='mailto:contact@debuggingbytes.com'><i class="fas fa-envelope fa-3x"></i></a>&nbsp;
+								<a href='https://www.facebook.com/debuggingbytes/'><i class="fab fa-facebook fa-3x"></i></a>&nbsp;
+								<a href='https://twitter.com/DebuggingBytes'><i class="fab fa-twitter fa-3x"></i></a>
+							</div>
+						</div>
+						<div class='row'>		
+							<div class='col social align-self-center shadow '>							
+								<div id="contact_form">
+								<form id="contact-form" method="post" role="form" class="squeeze" >
+									<div class="messages"></div>								
+									<div class="controls">								
+										<div class="row">
+											<div class="col align-self-center">
+												<div class="form-group">
+													<label for="form_name">Firstname *</label>
+													<input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+													<div class="help-block with-errors"></div>
+												</div>
+											</div>
+										</div>
+										<div class='row'>
+											<div class="col align-self-center">
+												<div class="form-group">
+													<label for="form_lastname">Lastname *</label>
+													<input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+													<div class="help-block with-errors"></div>
+												</div>
+											</div>											
+										</div>
+										<div class="row">
+											<div class="col align-self-center">
+												<div class="form-group">
+													<label for="form_email">Email *</label>
+													<input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+													<div class="help-block with-errors"></div>
+												</div>
+											</div>
+										</div>
+										<div class='row'>
+											<div class="col align-self-center">
+												<div class="form-group">
+													<label for="form_need">Please specify your need *</label>
+													<select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
+														<option value=""></option>
+														<option value="Quote">Request Quote</option>
+														<option value="Hosting">Web Hosting</option>
+														<option value="Request copy of an invoice">Request copy of an invoice</option>
+														<option value="Other">Other</option>
+													</select>
+													<div class="help-block with-errors"></div>
+												</div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col align-self-center">
+												<div class="form-group">
+													<label for="form_message">Message *</label>
+													<textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+													<div class="help-block with-errors"></div>
+												</div>
+											</div>
+										</div>
+										<div class='row'>
+											<div class="col align-self-center">
+												<input type="submit" class="btn btn-success btn-send" value="Send message" onclick="SubmitFormData();">
+											</div>
+										</div>										
+									</div>							
+								</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 footer">
+						<h1>Contact Us Now! <i class="fas fa-caret-down"></i></h1> 
+						<div class='row'>
+							<div class='col-md-4'>
+								<a href='./#home'>HOME</a>
+								<a href='./#services'>SERVICES</a>
+								<a href='./#aboutus'>ABOUT</a>
+								<a href='./contact-us.html'>CONTACT</a>
+							</div>
+							<div class='col-md-4'>
+								<a href='https://www.facebook.com/debuggingbytes/'><i class="fab fa-facebook-square fa-2x"></i></a>
+								<a href='https://twitter.com/DebuggingBytes'><i class="fab fa-twitter-square fa-2x"></i></a>
+								<a href='mailto: contact@debuggingbytes.com'><i class="far fa-envelope fa-2x"></i></a>
+								<a href='tel: 17802893856'><i class="fas fa-phone-square-alt fa-2x"></i></a>
+								<a href='https://www.google.com/maps/place/Chokecherry+Pl+SW,+Edmonton,+AB/@53.4098402,-113.4575126,17z/data=!3m1!4b1!4m5!3m4!1s0x53a01c162299c337:0x67a15c70c15424b3!8m2!3d53.4091519!4d-113.4547448'><i class="fas fa-map-marker-alt fa-2x"></i></a>
+										
+							</div>
+							<div class='col-md-4'>
+								<span>
+								Copyright &copy; 2019<br />
+								www.debuggingbytes.com<br />
+								Content and Material cannot be reused without written consent
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>	
+			<!-- Container Fluid--->
+		</div>
+		<!-- Wrapper -->
+	</body>
+</html>
+<script type="text/javascript" src="files/html5shiv.js"></script>
+<script type="text/javascript" src="files/jquery-3.js"></script>
+<script type="text/javascript" src="files/scripts.js"></script>
+<script type="text/javascript" src="files/ResizeSensor.js"></script>
+<script type="text/javascript" src="files/ElementQueries.js"></script>
+<script type="text/javascript" src="files/bootstrap_002.js"></script>
+<script type="text/javascript" src="files/bootstrap.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>

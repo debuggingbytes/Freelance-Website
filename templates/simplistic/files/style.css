@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=Satisfy');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,700;1,400&display=swap');
+
+/* Navigation Bar */
+nav.top {
+	width: 100%;
+}
+nav.top ul{
+	display: inline-block;
+	content: '';
+	list-style: none;;
+}
+nav.top li{
+	display: inline-block;
+	content: '';
+	list-style: none;
+}
+nav.top li a,a:visited{
+	text-decoration: none;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size:  1.5em;
+	font-weight: 300;
+	color: #FFF;
+}
+nav.top li a:hover {
+	color: #e6a417;
+	animation: fadeIn ease-in-out 0.5s;
+	-webkit-animation: fadeIn ease-in-out 0.5s;
+	-moz-animation: fadeIn ease-in-out 0.5s;
+	-o-animation: fadeIn ease-in-out 0.5s;
+	-ms-animation: fadeIn ease-in-out 0.5s;
+}
+
+.bg-light-grey{
+	background: #737373;
+}
+.bg-light-green-faded{
+	background: rgba(93, 91, 44, 0.7);
+}
+.bg-light-green{
+	background: rgba(93, 91, 44, 1);
+}
+/* HERO IMAGE*/
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	height: 85vh;
+	/*sizing */
+    padding: 0px;
+	background-image: url(./images/edmonton-city-rivervalley.jpg);
+	background-size: cover;
+    background-position: center center; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+/* Key frames */
+@keyframes fadeIn {
+	0% {opacity:0.5;}
+	100% {opacity:1;}
+  }
+  
+  @-moz-keyframes fadeIn {
+	0% {opacity:0.5;}
+	100% {opacity:1;}
+  }
+  
+  @-webkit-keyframes fadeIn {
+	0% {opacity:0.5;}
+	100% {opacity:1;}
+  }
+  
+  @-o-keyframes fadeIn {
+	0% {opacity:0.5;}
+	100% {opacity:1;}
+  }
+  
+  @-ms-keyframes fadeIn {
+	0% {opacity:0.5;}
+	100% {opacity:1;}
+  }
+
+/* Section border */
+
+/* Typography */
+.text-warm-yellow {
+	color: #e6a417;
+}
+.satisfy {
+	font-family: satisfy;
+}
+.ptsans {
+	font-family: "PT Sans";
+}
+h1,h2,h3,h4,h5,h6 {
+	color: #e6a417;
+}
+
+a,a:active, a:visited {
+	text-decoration: none;
+	color: #fff;
+
+}
+a:hover {
+	color: #e6a417;
+	animation: fadeIn ease-in-out 0.5s;
+	-webkit-animation: fadeIn ease-in-out 0.5s;
+	-moz-animation: fadeIn ease-in-out 0.5s;
+	-o-animation: fadeIn ease-in-out 0.5s;
+	-ms-animation: fadeIn ease-in-out 0.5s;
+}
+.text-shadow-sm {
+    text-shadow: 1px 1px 1px #000,
+    1px 2px 1px #000,
+    1px 3px 1px #000,
+    1px 4px 1px #000,
+    1px 5px 1px #000,
+	1px 10px 6px rgba(16,16,16,0.4),
+	2px 12px 10px rgba(16,16,16,0.2),
+	3px 14px 35px rgba(16,16,16,0.2),
+	4px 20px 60px rgba(16,16,16,0.4);
+}
+.text-shadow-xs {
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.7),
+             0px 8px 13px rgba(0,0,0,0.3),
+             0px 18px 23px rgba(0,0,0,0.2);
+}

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Simplistic in Design</title>
+		<!-- CSS Information -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
+		<link rel="stylesheet" href="./files/style.css">
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-JWKX9J2908"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'G-JWKX9J2908');
+		</script>	
+	</head>
+	<body>
+		<header>
+			<!-- Tablets and Desktops -->
+			<nav class="top fixed-top bg-light-green-faded border-bottom border-2 border-warning d-none d-lg-block d-md-none">
+				<div class="container-fluid">
+						<ul class='mt-3 float-end'>
+						<li class="me-5"><a href="index.html" id="">Home</a></li>
+						<li class="me-5"><a href="demo.html" id="">Demo Page</a></li>
+						<li class="me-5"><a href="contact-us.html" id="">Contact Us</a></li>
+						<li class="me-5"><a href="#" id="">Link #4</a></li>
+						<li class="me-5"><a href="#" id="">Link #5</a></li>
+					</ul>
+				</div>
+			</nav>
+			<!-- Mobile Navigation -->
+			<nav class="navbar navbar-expand-lg bg-light-green-faded navbar-light py-3 fixed-top d-block d-lg-none">
+				<div class="container">
+					<a href="index.html" class="navbar-brand w-50"><img src="./files/simple-logo.png" class="img-fluid w-50" alt="Your Logo"></a>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"><span class="navbar-toggler-icon"></span></button>
+					<div class="collapse navbar-collapse primary" id="navmenu">
+						<ul class="navbar-nav ms-auto"s>
+							<li class="nav-item">
+								<a href="index.html" class="nav-link text-light">Home</a>
+							</li>
+							<li class="nav-item">
+								<a href="demo.html" class="nav-link text-light">Demo Page</a>
+							</li>
+							<li class="nav-item">
+								<a href="contact-us.html" class="nav-link text-light">Contact Us</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link text-light">Link</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link text-light">Link</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<section>
+			<div>
+				<div id="sliding" class="carousel slide carousel-fade" data-bs-ride="carousel">
+					<div class="carousel-indicators text-dark">
+						<button type="button" data-bs-target="#sliding" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+						<button type="button" data-bs-target="#sliding" data-bs-slide-to="1" aria-label="Slide 2"></button>
+						<button type="button" data-bs-target="#sliding" data-bs-slide-to="2" aria-label="Slide 3"></button>
+					</div>
+					<div class="carousel-inner">
+						<div class="carousel-item active" data-bs-interval="3500">
+							<img src="./files/images/banff-mountains-view.jpg" class="d-block w-100" alt="Banff Mountain range">
+							<div class="carousel-caption d-none d-md-block text-light shadow bg-light-green-faded rounded-pill border-1 border p-3">
+								<h5>First slide label</h5>
+								<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet repellat pariatur quaerat consequuntur vitae reiciendis voluptas voluptatum ut, in, qui recusandae, sed explicabo porro consequatur!.</p>
+							</div>
+					 	 </div>
+					  	<div class="carousel-item" data-bs-interval="3000">
+							<img src="./files/images/osoyoss-british-columbia-duck.jpg" class="d-block w-100" alt="Ducks in Osoyoss British Columbia">
+							<div class="carousel-caption d-none d-md-block text-light shadow bg-light-green-faded rounded-pill border-1 border p-3">
+						  		<h5>Second slide label</h5>
+						  		<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum atque temporibus assumenda culpa. Vero, doloremque! Nemo, excepturi incidunt..</p>
+							</div>
+					  	</div>
+					  	<div class="carousel-item" data-bs-interval="3000">
+							<img src="./files/images/edmonton-the-orchards-storm-pond.jpg" class="d-block w-100" alt="City of Edmonton River Valley">
+							<div class="carousel-caption d-none d-md-block text-light shadow bg-light-green-faded rounded-pill border-1 border p-3">
+						  		<h5>Third slide label</h5>
+						  		<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum dolor quo laborum laudantium sunt tempora ea rem et dolores, iusto, fuga quos ratione impedit?.</p>
+							</div>
+					  	</div>
+					</div>
+					<button class="carousel-control-prev" type="button" data-bs-target="#sliding" data-bs-slide="prev">
+					  	<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					  	<span class="visually-hidden">Previous</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#sliding" data-bs-slide="next">
+					  	<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					  	<span class="visually-hidden">Next</span>
+					</button>
+				</div>
+			</div>
+		</section>
+		<section class="border-top border-3 border-warning">
+			<div class="container-fluid bg-light-grey">
+				<div class="row">
+					<div class="col-md d-md-flex">
+						<div class="col-md-3 mx-auto p-5 my-2">
+							<div class="d-flex flex-column bd-highlight mb-3">
+								<h2 class="satisfy">
+									Get In Touch..
+									<hr class="w-50 shadow">
+								</h2>
+								<div class="p-2 bd-highlight"><a href="#" class="h3 fst-italic"><i class="bi bi-facebook h3"></i> Facebook</a></div>
+								<div class="p-2 bd-highlight"><a href="#" class="h3 fst-italic"><i class="bi bi-twitter h3"></i> Twitter</a></div>
+								<div class="p-2 bd-highlight"><a href="#" class="h3 fst-italic"><i class="bi bi-instagram h3"></i> Instagram</a></div>
+								<div class="p-2 bd-highlight"><a href="#" class="h3 fst-italic"><i class="bi bi-linkedin h3"></i> LinkedIn</a></div>
+								<div class="p-2 bd-highlight"><a href="#" class="h3 fst-italic"><i class="bi bi-phone h3"></i> 1 (123) 456-7890</a></div>
+								<div class="p-2 bd-highlight"><a href="#" class="h3 fst-italic"><i class="bi bi-map h3"></i> 123 Main Street</a></div>
+							</div>
+						</div>
+						<div class="col-md mx-auto p-5 shadow mt-2">
+							<div class="d-flex">
+								<div class="flex-grow-1 ms-3">
+									<img src="/files/aboutus.png" class="w-25 float-end" alt="Who we are...">
+									<h1 class="satisfy">
+										Who we are
+										<hr class="w-50 shadow">
+									</h1>
+									<p class="lead">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, aperiam in vel ipsa ad nihil minima consectetur. Distinctio labore tempore amet doloremque repudiandae hic nesciunt commodi a illum, eaque ipsa animi unde totam, ea tempora fugiat! Laborum ad, quam eius numquam odit fuga illo sequi. Iusto nulla odit ducimus, cumque fuga, eum quam, minus quo assumenda modi impedit ratione? Libero ducimus voluptatum alias harum eius natus quidem fuga optio voluptate, sunt architecto nesciunt eos dicta quia. Vero, sapiente dolore quas distinctio repellendus labore commodi nemo neque qui inventore esse at a praesentium aliquam reiciendis fugiat. Suscipit, quod aliquam sint necessitatibus ea blanditiis excepturi optio est rem itaque aspernatur quae nisi veniam aliquid dignissimos iusto illo magnam expedita impedit vel fugiat. Fuga sint corrupti, laudantium dolorem odit magnam similique a provident.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="bg-light-green border-top border-3 border-warning">
+			<div class="container">
+				<div class="row align-self-end">
+					<div class="d-flex flex-column bd-highlight align-self-end pb-2 col-md">
+						<div class="bd-highlight text-center">Website Created By <a href="http://www.debuggingbytes.com">DebuggingBytes</a></div>
+						<div class="bd-highlight text-center">&copy; Copyright 2021 Content and Material cannot be reused without written consent from website owner</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
